@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
-import { RootState } from '../../redux/store';
+import type { RootState } from '../../redux/store';
 import Film from '../Film/Film';
-import { IFilmShort } from '../../models/models';
+import type { IFilmShort } from '../../models/models';
 import './films.css';
 
 const Films = () => {

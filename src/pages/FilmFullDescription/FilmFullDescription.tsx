@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { IFilmFull } from '../../models/models';
+import type { IFilmFull } from '../../models/models';
 import Star from '../../components/Star/Star';
 import noImage from '../../assets/noImage.png';
 import './filmFullDescription.css';

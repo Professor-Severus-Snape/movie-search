@@ -1,5 +1,5 @@
 import { buildCreateSlice, asyncThunkCreator } from '@reduxjs/toolkit';
-import { IFilmShort } from '../models/models';
+import type { IFilmShort } from '../models/models';
 
 // ответ от сервера: http://www.omdbapi.com/?apikey=64405bd2&s=die+hard
 // {

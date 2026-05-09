@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { IFilmShort } from '../../models/models';
+import type { IFilmShort } from '../../models/models';
 import Star from '../Star/Star';
 import noImage from '../../assets/noImage.png';
 import './film.css';

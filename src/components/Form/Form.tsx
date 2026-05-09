@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch, RootState } from '../../redux/store';
+import type { AppDispatch, RootState } from '../../redux/store';
 import { fetchFilms, removeFilms } from '../../redux/filmsSlice';
 import { clearForm, saveInputValue } from '../../redux/formSlice';
 import resetBtn from '../../assets/reset.svg';

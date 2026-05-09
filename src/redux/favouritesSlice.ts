@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { IFilmShort } from '../models/models';
+import type { IFilmShort } from '../models/models';
 
 interface IInitialState {
   favourites: IFilmShort[];
