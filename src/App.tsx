@@ -1,31 +1,8 @@
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from 'react-router-dom';
-
-import Home from './pages/Home/Home';
-import Favourites from './pages/Favourites/Favourites';
-import FilmFullDescription from './pages/FilmFullDescription/FilmFullDescription';
-
-import Layout from './components/Layout/Layout';
+import { RouterProvider } from 'react-router-dom';
+import router from './router';
 
 const App = () => {
-  const routes = createBrowserRouter(
-    createRoutesFromElements(
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="favourites" element={<Favourites />} />
-        <Route path=":id" element={<FilmFullDescription />} />
-      </Route>
-    ),
-    {
-      basename: import.meta.env.BASE_URL, // значение 'basename' - из конфига vite
-    }
-  );
-
-  return <RouterProvider router={routes} />;
+  return <RouterProvider router={router} />;
 };
 
 export default App;
