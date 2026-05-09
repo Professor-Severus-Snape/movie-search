@@ -20,7 +20,7 @@ const Form = () => {
     dispatch(removeFilms()); // очистка массива с фильмами (в store)
   };
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: React.SubmitEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     const trimmedValue = inputValue.trim();
